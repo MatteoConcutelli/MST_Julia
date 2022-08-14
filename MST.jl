@@ -109,14 +109,14 @@ $priorità(v) = \min_{(u,v):u ∈ S} \ peso(u,v)$ $u,v ∈ V$ e $S$ è l'insieme
 
 Più in dettaglio il funzionamento, dato un grafo $G$ :
 - crea un grafo vuoto $T$ che sarà l'**MST** di $G$.
-- creare un insieme vuoto per i **nodi visitati** $S$.
+- crea un insieme vuoto per i **nodi visitati** $S$.
 - crea una **coda con priorità** $Q$. Inizialmente le priorità dei nodi sono ∞.
 - finche la coda $Q$ non risulta vuota:
-   - rimuovi l'elemento $u$ con priorità minima da $Q$, con la funzione $deleteMin$, e inseriscilo in $S$
+   - rimuove l'elemento $u$ con priorità minima da $Q$, con la funzione $deleteMin$, e lo inserisce in $S$
    - per ogni vicino $v$ di $u$ :
       - se $v$ ∉ $S$ e il peso $w$ dell'arco $(u,v)$ è minore della priorità di $v$:
          - aggiorna la priorità di $v$ : priorità($v$) = $w$  con la funzione $decreaseKey$
-         - rendi u *nuovo padre* di v in $T$
+         - rende u *nuovo padre* di v in $T$
 
 """
 
@@ -2153,7 +2153,7 @@ version = "0.9.1+5"
 # ╟─0f119f11-f4eb-4363-89be-21c66233ed96
 # ╟─d2538f31-63dd-4c47-bdf9-c2a4eca85d6b
 # ╟─26f298b1-3850-4406-b969-ef9a2826f43f
-# ╠═965facde-6da3-41ff-a5b8-2a85a5d9bca2
+# ╟─965facde-6da3-41ff-a5b8-2a85a5d9bca2
 # ╟─1924f2fc-2c2a-449b-a035-b0346b77a244
 # ╟─712f751e-3d36-4e15-8ae9-c8bd365d833c
 # ╟─29e0ce06-92dc-4daa-b304-32bbc5018ccb
