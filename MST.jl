@@ -502,8 +502,7 @@ Se si vuole modificare il grafo :
 |   |   | 
 |:-:|:-:|
 |numero nodi |$@bind num_nodi Slider(2:20, show_value=true, default=10)|
-
-posizione nodo $(@bind nodo_sel Select(1:num_nodi)) 
+ 
 """
 
 # ╔═╡ 20a8694c-718c-4eda-976d-21e4a84e52dc
@@ -512,6 +511,11 @@ begin
 	locs_x_c, locs_y_c = random_layout(g_c)
 	nothing
 end
+
+# ╔═╡ 1bb898b1-eab8-4e5f-bec9-f235a216a0f9
+md"""
+posizione nodo $(@bind nodo_sel Select(1:num_nodi))
+"""
 
 # ╔═╡ 55b55dd5-8b48-4c0d-94bd-5ad97eeeb723
 md"""
@@ -2195,6 +2199,7 @@ version = "0.9.1+5"
 # ╟─ae0aecdf-f8fd-4276-9f04-14c2814e4dfc
 # ╟─d9a20ee6-09fa-481a-a394-5d64dc5c2e0b
 # ╟─70d2917e-a0be-4bd9-b3cf-0515a06ec550
+# ╟─1bb898b1-eab8-4e5f-bec9-f235a216a0f9
 # ╟─55b55dd5-8b48-4c0d-94bd-5ad97eeeb723
 # ╟─149fc894-9b8b-4bb0-b6ef-f9664bb2ced9
 # ╟─dc56ea28-9d6f-4e50-9f4d-484448a6b2a1
